@@ -9,7 +9,7 @@ CONTENTS:
 
 LICENSE:
 (C)2013 - Copyright by Emanuele Ballarin. All rights reserved.
-The source code is publicly available for reading only. No other permissions are given to the public, unless otherwise stated or after official written agreements to single users.
+The source code is publicly available for reading only. No other permissions are given to the public, unless otherwise stated or after official written agreements with the Author.
 
 
 Revision 1.1 - 26/02/2013 # 23.00
