@@ -1,4 +1,3 @@
-spiralex
+spiralex (Mathematics-Oriented Python Repository)
 ========
-
-Shcool Workgroup - Various scripts in Python about spirals
+Unofficial repository for the school project "Mathematics-Oriented Python" - Various scripts in Python about spirals and the mathematics behind them.
