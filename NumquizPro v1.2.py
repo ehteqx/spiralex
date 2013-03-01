@@ -16,7 +16,7 @@ print(intro)
 print(" ")
 print("Get ready!!")
 while True:
-  try:
+	try:
 		lowlim = int(raw_input("Choose the lower limit of the range in which the chosen number have to be included... "))
 		break
 	except ValueError:
