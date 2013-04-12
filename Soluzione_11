@@ -1,0 +1,50 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+### START OF THE CODE ###
+## TRY STRUCTURE ##
+from pylab import * # Vengono importati tutti i sottomoduli contenuti nel modulo pylab (necessari al funzionamento dello script)
+from numpy import * # Vengono importati tutti i sottomoduli contenuti nel modulo numpy (necessari al funzionamento dello script)
+while True:
+  try:
+		upperlim = int(raw_input("Choose the upper limit for the Z set approssimation. An integer is required..."))
+		break
+	except ValueError:
+		print("I'm sorry! The input you gave me isn't an integer. Please, insert a correct integer... ")
+totalcount = 0
+truecount = 0
+for n in range (0,upperlim+1):
+    for m in range (0,upperlim+1):
+        number = (2013**n)*(2**m)
+        if number <= 9999 and (2*number) > 9999:
+            totalcount = totalcount + 1
+            truecount = truecount + 1
+        else:
+            totalcount = totalcount + 1
+falsecount = (totalcount - truecount)
+## PRINT STRUCTURE 1 ##
+print ("NUMERO TENTATIVI TOTALI:")
+print (totalcount)
+print (" ")
+print ("NUMERO TENTATIVI VALIDI:")
+print (truecount)
+print (" ")
+print ("NUMERO TENTATIVI NON VALIDI:")
+print (falsecount)
+print (" ")
+## CHECK STRUCTURE ##
+totalcount_th = ((upperlim +1)**2)
+## PRINT STRUCTURE 2 ##
+if totalcount_th == totalcount:
+        print ("YEAH! EVERYTHING WENT OK!")
+else:
+        print ("OH NO! SOMETHING WENT WRONG DURING THE ELABORATION, TRY AGAIN!")
+print(" ")
+print(" ")
+## SETS MODULE ##
+subsetsnumber = ((2**(truecount))-1)
+## PRINT STRUCTURE 3 ##
+print("Number of total subsets (as required in the problem): ")
+print (subsetsnumber)
+print(" ")
+print("Bye Bye!!")
+### END OF THE CODE ###
